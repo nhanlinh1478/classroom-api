@@ -6,6 +6,6 @@ const ClassController = require("../controllers/addClassController");
 /* GET home page. */
 function Route(app) {
   app.get("/", ListClassesController.index);
-  app.get("/classes/addClass", ClassController.addClass);
+  app.post("/classes/addClass", ClassController.addClass);
 }
 module.exports = Route;

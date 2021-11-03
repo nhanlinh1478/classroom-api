@@ -13,5 +13,8 @@ const crClass = db.define("classes", {
   room: {
     type: Sequelize.STRING,
   },
+  image: {
+    type: Sequelize.STRING,
+  },
 });
 module.exports = crClass;
